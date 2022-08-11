@@ -59,7 +59,23 @@ These are the grunts that do the work in each sprint cycle, these teams need to 
 #### Stakeholders: 
 These people are directly effected by the outcome of the release of the product, they may provide funding or extra information to developers, but typically, they have no say in the smaller operations of day-to-day tasks.  
 
-# <mark>Question 4</mark>: Provide an overview and description of a standard source control workflow
+# <mark>Question 4</mark>: Provide an overview and description of a standard source control workflow:
+Source control workflow is a practice involving the use of software to track versions/progress of a product/program etc. Typically, as a product goes through its development stages, many things will be added, removed, edited or even completely redesigned. This process can introduce bugs/break functionality of the program/product. To prevent this, source control software is used to establish a functional base for the program. To elaborate, in the early stages of development, a "master" branch is created. This branch is created at a point where the basic program functionality is there and working as expected. After the master branch is created, individual "branches" are created as an extension. These branches are where new features are added, tested and completed. The benefit to this structure is when a branch is broken, full of bugs etc, the master branch of the program remains unaffected. As the branch reaches expected functionality and testing is completed, developers can merge the new branch into the master branch. Once merged, the master branch is updated to include the new branch and the base for the master branch continues from the point of the merge.  
+Another key feature of a source control workflow (particulary git, in collaboration with github) is the ability to add, commit and push changes.  
+For example:  
+- "Github "is a cloud based hosting service that allows users to create and manage repositories.
+-  "Git" on the other hand, is the version control software itself.  
+
+When used in conjuction, like i am with this assignment, users are able to add and commit changes they have made to a project and then further push those changes to the remote repository. To simplify, if used in a team, the remote repository would be utilised in such a way that allows multiple developers to complete seperate sections of work and further push those changes so they are available remotely to the rest of the team. Without version control software like the 2 just mentioned, any changes made by devlopers would only be accessible locally, this means a large amount of work would be introduced in relation to collecting all of that work, piling it all together and then trying to test if it is functional when grouped together.  
+
+To simplify this process, i will outline a typical cycle of software version control using dot points:  
+- Repository is created remotely and linked locally
+- A barebones functional program is developed (Think along the lines of "Version 1")
+- Version 1 is the master branch, however, it needs a new feature to be added
+- A branch is created (Think along the lines of playing around with a new feature without any commitment)  
+- The branch undergoes developement and reaches a point where it is ready to be included as a feature of the project
+- The branch is merged to the master branch  
+- Once merged, the basis for the master branch moves forward. (Think "Version 1.1"  From this point forward, features and new branches are based off of "Version 1.1")
 # <mark>Question 5</mark>: Provide an overview and description of a standard software testing process (e.g. manual testing)
 # Question 6: Discuss and analyse requirements related to information system security and how they relate to the project
 # Question 7: Discuss common methods of protecting information and data and how you would apply them to the project
